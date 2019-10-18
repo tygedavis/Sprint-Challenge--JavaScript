@@ -98,10 +98,11 @@ console.log(`The first name and email is ` + contactInfo);
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called unisWithUni that contains them all. This will be an array of objects. Log the result. */
 //let unisWithUni = [];
 
-let unisWithUni = graduates.filter(function(uni){
-  return uni.university === "uni";
+let unisWithUni = universities.filter(function(uni){
+  console.log(uni.includes('uni'));
+  return uni;
 })
-console.log(`All of the universities that have 'uni' in them  ${unisWithUni} COULD NOT COMPLETE`);//TODO COME BACK
+console.log(`All of the universities that have 'uni' in them `, unisWithUni, `COULD NOT COMPLETE`);//TODO COME BACK
 
 
 // ==== ADVANCED Array Methods ====
@@ -150,7 +151,7 @@ The zoos are concerned about animals with a lower population count. Using filter
 let lowPopulationAnimals = zooAnimals.filter(function(lowPop){
   return lowPop.population < 5;
 });
-console.log(`The animals with a low population ${lowPopulationAnimals} COULD NOT COMPLETE`); //TODO COME BACK TO THIS ONE
+console.log(`The animals with a low population`, lowPopulationAnimals);
 
 /* Request 4: .reduce() 
 
