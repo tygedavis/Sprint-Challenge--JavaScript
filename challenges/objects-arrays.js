@@ -99,11 +99,9 @@ console.log(`The first name and email is ` + contactInfo);
 //let unisWithUni = [];
 
 let unisWithUni = universities.filter(function(uni){
-  console.log(uni.includes('uni'));
-  return uni;
+   return uni.includes('Uni');
 })
-console.log(`All of the universities that have 'uni' in them `, unisWithUni, `COULD NOT COMPLETE`);//TODO COME BACK
-
+console.log(`All of the universities that have 'uni' in them `, unisWithUni);//TODO COME BACK
 
 // ==== ADVANCED Array Methods ====
 
